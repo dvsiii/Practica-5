@@ -14,6 +14,10 @@ find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core)
 
 add_executable(Practica5_Actividad1
   main.cpp
+  caja.h caja.cpp
+  particula.h particula.cpp
+  obstaculo.h obstaculo.cpp
+  simulador.h simulador.cpp
 )
 target_link_libraries(Practica5_Actividad1 PRIVATE Qt${QT_VERSION_MAJOR}::Core)
 
