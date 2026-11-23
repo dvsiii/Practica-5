@@ -1,6 +1,5 @@
 #ifndef PARTICULA_H
 #define PARTICULA_H
-#include <string>
 using namespace std;
 class particula
 {
@@ -10,7 +9,6 @@ class particula
     float radio;
 public:
     particula();
-    float geometria(float radio);
     void movimiento(float tiempo, float gravedad);
     void agregarparticula(float px, float py, float vx, float vy, float m, float r);
     void setposicion(float x, float y);

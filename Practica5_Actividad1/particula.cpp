@@ -31,6 +31,7 @@ void particula::movimiento(float tiempo, float gravedad){
     float y =posicion[1]+velocidad[1]*tiempo-0.5*gravedad*(tiempo*tiempo);
     posicion[0]=x;
     posicion[1]=y;
+    velocidad[1]=velocidad[1]-gravedad*tiempo;
 }
 void particula::setposicion(float x, float y){
     posicion[0]=x;
